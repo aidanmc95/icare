@@ -1,6 +1,11 @@
 # frozen_string_literal: true
 
 FactoryBot.define do
+  factory :user_itinerary do
+    user { nil }
+    itinerary { nil }
+  end
+
   sequence(:uid)      { |n| "100#{n}" }
   sequence(:email)    { |n| "person#{n}@example.com" }
 
